@@ -1,44 +1,55 @@
 /*  G E N E R A L  S E T T I N G S  */
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  line-height: 1.4;
 }
 
 a:visited,
 a:link {
   text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
 }
 
 a:active,
 a:hover,
-a:focus {}
+a:focus {
+  border-bottom: 1px solid #C0CE00;
+}
 
-h3 {}
+h3 { text-align: center; }
 
 p {}
 
-
-/*  R E S P O N S I V E  C O N T A I N E R S  */
-
-#main-wrapper {}
-
-.container {}
-
-.navbar {}
-
-.row {}
+div {
+  /*border: 1px dotted grey;*/
+}
 
 
 /*  I C O N S  */
 
-.icon {}
+.icon { text-decoration: none; }
+
+.icon:hover {
+
+}
 
 .icon::before {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .icon-home::before {
@@ -78,11 +89,30 @@ p {}
 }
 
 
+/*  R E S P O N S I V E  C O N T A I N E R S  */
+
+#main-wrapper {
+  min-height: 100vh;
+}
+
+.container {}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  top: 20px;
+}
+
+.row {}
+
+
 /*  N A V B A R  */
 
-.inner-container {}
+.inner-container { height: inherit; }
 
-.inner-container .navbar {}
+.inner-container .navbar { height: inherit; }
 
 .navbar-nav {
   margin:0;
@@ -90,36 +120,90 @@ p {}
   list-style: none;
 }
 
-.navbar-nav .active {}
+.navbar-nav .active {
+  color: #C0CE00;
+}
 
 .navbar-nav li {
   list-style: none;
-  display: inline;
+  display: inline-block;
+  padding: 10px;
 }
 
-.navbar li .external {}
+.navbar-nav li a:active,
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+  color: #C0CE00;
+  border: none;
+}
+
+.navbar li .external {
+  font-style: italic;
+}
 
 
 /*  L A N D I N G  P A G E  */
 
-.title {}
+.title {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/landing-page-min.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 50px;
+  height: 50vh;
+}
 
-.site-name {}
+.site-name,
+.slogon {
+  font-weight: 300;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
+}
 
-.slogon {}
+.slogon { font-weight: 300; }
 
 
 /*  C O N T E N T  */
 
 .content {}
 
-.part {}
+.part {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/stand-for-min.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  height: 50vh;
+}
+
+.part:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/development-min.jpg');
+}
+
+.part:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/marketing-min.jpg');
+}
+
+.part:nth-child(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('img/agentur-entwicklerraum-min.jpg');
+}
 
 
 /*  F O O T E R  */
 
-.footer-wrapper {}
+.footer-wrapper {
+  background-color: #373737;
+  text-align: center;
+  padding: 10px;
+ }
 
 .social-buttons {}
+
+.social-buttons a:active,
+.social-buttons a:hover,
+.social-buttons a:focus {
+  border-bottom: none;
+  color: #C0CE00;
+}
 
 #tm-copyright {}
