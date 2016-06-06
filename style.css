@@ -1,0 +1,106 @@
+/*  G E N E R A L  S E T T I N G S  */
+body {}
+
+a:visited,
+a:link {}
+
+a:active,
+a:hover,
+a:focus {}
+
+h3 {}
+
+p {}
+
+/*  R E S P O N S I V E  C O N T A I N E R S  */
+
+#main-wrapper {}
+
+.container {}
+
+.navbar {}
+
+.row {}
+
+
+/*  I C O N S  */
+
+.icon {}
+
+.icon-home::before {
+  content: "H";
+}
+
+.icon-camera::before {
+  content: "C";
+}
+
+.icon-refs::before {
+  content: "R";
+}
+
+.icon-about::before {
+  content: "Ü";
+}
+
+.icon-contact::before {
+  content: "C";
+}
+
+.icon-xing::before {
+  content: "X";
+}
+
+.icon-facebook::before {
+  content: "F";
+}
+
+.icon-twitter::before {
+  content: "T";
+}
+
+.icon-google::before {
+  content: "G";
+}
+
+
+/*  N A V B A R  */
+
+.inner-container {}
+
+.inner-container .navbar {}
+
+.navbar-nav {}
+
+.navbar-nav .active {}
+
+.navbar-nav li {
+  list-style: none;
+}
+
+.navbar li .external {}
+
+
+/*  L A N D I N G  P A G E  */
+
+.title {}
+
+.site-name {}
+
+.slogon {}
+
+
+/*  C O N T E N T  */
+
+.content {}
+
+.part {}
+
+
+/*  F O O T E R  */
+
+.footer-wrapper {}
+
+.social-buttons {}
+
+#tm-copyright {}
