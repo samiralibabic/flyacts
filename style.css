@@ -1,8 +1,15 @@
 /*  G E N E R A L  S E T T I N G S  */
-body {}
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 a:visited,
-a:link {}
+a:link {
+  text-decoration: none;
+}
 
 a:active,
 a:hover,
@@ -11,6 +18,7 @@ a:focus {}
 h3 {}
 
 p {}
+
 
 /*  R E S P O N S I V E  C O N T A I N E R S  */
 
@@ -27,40 +35,46 @@ p {}
 
 .icon {}
 
+.icon::before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .icon-home::before {
-  content: "H";
+  content: "\f015";
 }
 
 .icon-camera::before {
-  content: "C";
+  content: "\f03d";
 }
 
 .icon-refs::before {
-  content: "R";
+  content: "\f108";
 }
 
 .icon-about::before {
-  content: "Ü";
+  content: "\f05a";
 }
 
 .icon-contact::before {
-  content: "C";
+  content: "\f095";
 }
 
 .icon-xing::before {
-  content: "X";
+  content: "\f168";
 }
 
 .icon-facebook::before {
-  content: "F";
+  content: "\f09a";
 }
 
 .icon-twitter::before {
-  content: "T";
+  content: "\f099";
 }
 
 .icon-google::before {
-  content: "G";
+  content: "\f0d5";
 }
 
 
@@ -70,12 +84,17 @@ p {}
 
 .inner-container .navbar {}
 
-.navbar-nav {}
+.navbar-nav {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
 
 .navbar-nav .active {}
 
 .navbar-nav li {
   list-style: none;
+  display: inline;
 }
 
 .navbar li .external {}
