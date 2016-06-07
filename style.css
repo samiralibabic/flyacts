@@ -25,6 +25,7 @@ a:active,
 a:hover,
 a:focus {
   border-bottom: 1px solid #C0CE00;
+  outline: none;
 }
 
 h3 { text-align: center; }
@@ -49,7 +50,7 @@ div {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  padding: 10px;
+  padding-right: 10px;
 }
 
 .icon-home::before {
@@ -109,12 +110,48 @@ div {
   top: 0;
   background-color: #C0CE00;
   z-index: 10;
+  box-shadow: 0px 0px 20px black;
 }
 
 @media screen and (max-width: 768px) {
+
   .navbar {
-    display:none;
+    background-color: rgba(192,206,0,0.95);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    z-index: 10;
+    box-shadow: 0px 0px 20px black;
+    padding-top: 42px;
   }
+
+  .navbar:before {
+    content: "\f0c9";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: FontAwesome;
+    color: white;
+    background-color: #c0ce00;
+    box-shadow: 0px 0px 10px black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    padding-right: 10px;
+    z-index: 10;
+    display: block;
+  }
+
+  .inner-container {
+    display: none;
+  }
+
 }
 
 .row {}
@@ -158,11 +195,34 @@ div {
 .scrolled .navbar-nav li a:active,
 .scrolled .navbar-nav li a:hover,
 .scrolled .navbar-nav li a:focus {
-  border-bottom: 2px solid white;
+  border-bottom: 5px solid white;
 }
 
 .navbar li .external {
   font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar-nav li {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .navbar-nav li a:visited,
+  .navbar-nav li a:link {
+    color: #373737;
+    padding-bottom: 10px;
+    padding-right: 20px;
+  }
+
+  .navbar-nav li a:active,
+  .navbar-nav li a:hover,
+  .navbar-nav li a:focus {
+    color: white;
+  }
+
 }
 
 
