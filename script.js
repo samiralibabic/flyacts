@@ -1,15 +1,14 @@
 window.onscroll = function() { catchScroll() };
 
 function catchScroll() {
-    if (document.body.scrollTop >= 5) {
+    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
         var navbars = document.getElementsByClassName("navbar");
         for (var i = 0; i < navbars.length; i++) navbars[i].setAttribute("class", "navbar scrolled");
-    }
-    if (document.body.scrollTop < 5) {
+    } else {
         var navbars = document.getElementsByClassName("navbar");
         for (var i = 0; i < navbars.length; i++) navbars[i].setAttribute("class", "navbar");
     }
-}
+};
 
 document.getElementsByClassName("navbar")[0].onclick = function() { openMenu() };
 
@@ -19,7 +18,7 @@ function openMenu() {
     } else {
         document.getElementsByClassName("inner-container")[0].style.display = "";
     }
-}
+};
 
 window.setInterval (changePart, 5000);
 
@@ -52,4 +51,4 @@ function changePart() {
             };
         }
     }
-}
+};
