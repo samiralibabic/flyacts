@@ -118,7 +118,7 @@ div {
   box-shadow: 0px 0px 20px black;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   .navbar {
     background-color: rgba(192,206,0,0.95);
@@ -159,7 +159,7 @@ div {
 
   .navbar-nav {
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
 }
@@ -212,7 +212,7 @@ div {
   font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   .navbar-nav li {
     display: block;
@@ -294,6 +294,13 @@ div {
 .part:nth-child(3),
 .part:nth-child(4) {
   display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .part {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 
